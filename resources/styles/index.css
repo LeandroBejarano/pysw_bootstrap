@@ -1,0 +1,12 @@
+.hero {
+    height: 80vh;
+    background: url('https://hikemtshasta.com/wp-content/uploads/2019/12/christmas-lenticular.gif?w=627') center/cover;
+}
+
+.destino-card {
+    transition: transform 0.3s;
+}
+
+.destino-card:hover {
+    transform: scale(1.05);
+}

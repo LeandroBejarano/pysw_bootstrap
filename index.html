@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,	initial-scale=1,	shrink-to-fit=no">
+    <link rel="stylesheet" href="resources/styles/index.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Turismo</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agencias.html">Agencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero d-flex align-items-center text-center text-black">
+        <div class="container">
+            <h1 id="hero-text">Explorá el mundo</h1>
+            <p>Viví experiencias únicas</p>
+        </div>
+    </section>
+
+    <!-- Cards con destinos -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Destinos</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card destino-card">
+                    <img src="https://picsum.photos/400/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Calles</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card destino-card">
+                    <img src="https://picsum.photos/401/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Ciudad</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card destino-card">
+                    <img src="https://picsum.photos/402/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Montaña</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador -->
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="counter" data-target="500">0</h2>
+                    <p>Viajeros</p>
+                </div>
+                <div class="col">
+                    <h2 class="counter" data-target="120">0</h2>
+                    <p>Destinos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel -->
+    <div id="carouselTest" class="carousel slide my-5" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+
+            <div class="carousel-item active">
+                <p>"¡Excelente servicio!"</p>
+            </div>
+
+            <div class="carousel-item">
+                <p>"Viaje inolvidable"</p>
+            </div>
+
+            <div class="carousel-item">
+                <p>"¡Definitivamente lo recomendaré!"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <form id="form">
+                        <input type="email" class="form-control mb-2" placeholder="Email" required>
+                        <button class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <h5>Seguinos</h5>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe src="https://www.google.com/maps?q=argentina&output=embed" width="100%"
+                        height="150"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="resources/scripts/index.js"></script>
+</body>
+
+</html>
