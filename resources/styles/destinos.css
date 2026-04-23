@@ -1,0 +1,17 @@
+.destino-card {
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.destino-card img {
+    transition: transform 0.3s;
+}
+
+.destino-card:hover img {
+    transform: scale(1.1);
+}
+
+/* EFECTO SUAVE */
+.destino {
+    transition: all 0.4s ease;
+}
