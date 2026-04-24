@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,	initial-scale=1,	shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Índice</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Turismo</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agencias.html">Agencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Contacto</h1>
+
+        <form id="formContacto" class="row g-3">
+            <div class="col-md-6">
+                <label>Nombre</label>
+                <input type="text" id="nombre" class="form-control" required>
+                <small class="text-danger error"></small>
+            </div>
+            <div class="col-md-6">
+                <label>Email</label>
+                <input type="email" id="email" class="form-control" required>
+                <small class="text-danger error"></small>
+            </div>
+            <div class="col-12">
+                <label>Mensaje</label>
+                <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+                <small class="text-danger error"></small>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+                <!-- Spinner de carga -->
+                <div id="spinner" class="spinner-border text-primary ms-3" style="display:none;"></div>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Modales -->
+    <div class="modal fade" id="modalOk" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-center p-4">
+                <h4>Mensaje enviado ✔</h4>
+                <p>Gracias por contactarnos</p>
+                <button class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalError" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-center p-4">
+                <h4>Error al enviar ❌</h4>
+                <p>Verifique su correo y vuelva a intentarlo</p>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="resources/scripts/contacto.js"></script>
+
+</body>
+
+</html>
