@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Blog - Revista de Viajes</title>
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/styles/blog.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Turismo</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="agencias.html">Agencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row min-vh-75 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="display-1 fw-bold text-uppercase">Revista de Viajes</h1>
+          <p class="lead mt-3">Historias, destinos y aventuras autour del mundo</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filtro por Categorías -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-4 fw-light">Filtrar por categoría</h2>
+          <div class="category-filters">
+            <button class="btn btn-outline-dark filter-btn active" data-category="all">
+              Todos
+            </button>
+            <button class="btn btn-outline-dark filter-btn" data-category="aventura">
+              <i class="bi bi-compass me-1"></i>Aventura
+            </button>
+            <button class="btn btn-outline-dark filter-btn" data-category="cultura">
+              <i class="bi bi-book me-1"></i>Cultura
+            </button>
+            <button class="btn btn-outline-dark filter-btn" data-category="gastronomia">
+              <i class="bi bi-cup-straw me-1"></i>Gastronomía
+            </button>
+            <button class="btn btn-outline-dark filter-btn" data-category="playa">
+              <i class="bi bi-sun me-1"></i>Playa
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artículos del Blog -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4" id="articles-grid">
+
+        <!-- Artículo destacado -->
+        <article class="col-12 featured-article scroll-fade" data-category="aventura">
+          <div class="card border">
+            <div class="row g-0">
+              <div class="col-lg-7 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop"
+                  class="img-fluid w-100 h-100" alt="Montañas">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body py-5 px-lg-4">
+                  <span class="badge bg-danger mb-2">Destacado</span>
+                  <span class="badge ms-1 category-badge">Aventura</span>
+                  <h2 class="card-title display-5 fw-bold mt-3">Explorando los Andes</h2>
+                  <p class="card-text text-muted">Una aventura increíble a través de las montañas más impresionantes de
+                    Sudamérica. Descubrimos villanos Remote donde la naturaleza se muestra en su máximo esplendor.</p>
+                  <div class="d-flex align-items-center mt-3">
+                    <img src="https://i.pravatar.cc/50?img=1" class="rounded-circle me-2" alt="Autor"
+                      style="width: 50px; height: 50px; object-fit: cover;">
+                    <div>
+                      <small class="d-block fw-bold">María González</small>
+                      <small class="text-muted">15 de Marzo, 2024</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-dark mt-4" data-bs-toggle="modal" data-bs-target="#articleModal1">
+                    Leer más <i class="bi bi-arrow-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article class="col-lg-6 article-card scroll-fade" data-category="cultura">
+          <div class="card h-100 border shadow-sm">
+            <div class="row g-0 h-100">
+              <div class="col-lg-7 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-left" alt="Machu Picchu">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body">
+                  <span class="badge text-bg-light category-badge">Cultura</span>
+                  <h3 class="card-title h5 fw-bold mt-2">Machu Picchu: El secretos de los Incas</h3>
+                  <p class="card-text text-muted">Descubriendo los misterios de una de las maravillas del mundo moderno.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>5 min lectura</small>
+                    <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#articleModal2">
+                      Leer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artículo 3 -->
+        <article class="col-lg-6 article-card scroll-fade" data-category="gastronomia">
+          <div class="card h-100 border shadow-sm">
+            <div class="row g-0 h-100">
+              <div class="col-lg-7 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-left" alt="Comida peruana">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark category-badge">Gastronomía</span>
+                  <h3 class="card-title h5 fw-bold mt-2">Sabores del Perú</h3>
+                  <p class="card-text text-muted">Un viaje culinario por los platos más emblemáticos de la cocina
+                    peruano.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>3 min lectura</small>
+                    <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#articleModal3">
+                      Leer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artículo 4 -->
+        <article class="col-lg-6 article-card scroll-fade" data-category="playa">
+          <div class="card h-100 border shadow-sm">
+            <div class="row g-0 h-100">
+              <div class="col-lg-7 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop"
+                  class="card-img-left" alt="Playa">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body">
+                  <span class="badge bg-info category-badge">Playa</span>
+                  <h3 class="card-title h5 fw-bold mt-2">Las mejores playas de Latinoamérica</h3>
+                  <p class="card-text text-muted">Desde Costa Rica hasta Brasil, un recorrido por las costas más bellas.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>4 min lectura</small>
+                    <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#articleModal4">
+                      Leer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artículo 5 -->
+        <article class="col-lg-6 article-card scroll-fade" data-category="aventura">
+          <div class="card h-100 border shadow-sm">
+            <div class="row g-0 h-100">
+              <div class="col-lg-7 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?w=600&h=400&fit=crop"
+                  class="card-img-left" alt="Aventura">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body">
+                  <span class="badge bg-danger category-badge">Aventura</span>
+                  <h3 class="card-title h5 fw-bold mt-2">Sandboard en Atacama</h3>
+                  <p class="card-text text-muted">Una experiencia única deslizando por las dunas del desierto más
+                    antiguo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>6 min lectura</small>
+                    <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#articleModal5">
+                      Leer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artículo 6 -->
+        <article class="col-lg-6 article-card scroll-fade" data-category="cultura">
+          <div class="card h-100 border shadow-sm">
+            <div class="row g-0 h-100">
+              <div class="col-lg-7 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1522008629172-0c17aa47d1ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-left" alt="Festival">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body">
+                  <span class="badge text-bg-success category-badge">Cultura</span>
+                  <h3 class="card-title h5 fw-bold mt-2">Carnaval de Rio</h3>
+                  <p class="card-text text-muted">La fiesta más grande del mundo explicada desde adentro.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>5 min lectura</small>
+                    <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#articleModal6">
+                      Leer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artículo 7 -->
+        <article class="col-lg-6 article-card scroll-fade" data-category="gastronomia">
+          <div class="card h-100 border shadow-sm">
+            <div class="row g-0 h-100">
+              <div class="col-lg-7 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop"
+                  class="card-img-left" alt="Restaurante">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark category-badge">Gastronomía</span>
+                  <h3 class="card-title h5 fw-bold mt-2">Michelin en Buenos Aires</h3>
+                  <p class="card-text text-muted">Los mejores restaurantes de la ciudad que redefine la cocina
+                    argentina.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>7 min lectura</small>
+                    <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#articleModal7">
+                      Leer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artículo 8 -->
+        <article class="col-lg-6 article-card scroll-fade" data-category="playa">
+          <div class="card h-100 border shadow-sm">
+            <div class="row g-0 h-100">
+              <div class="col-lg-7 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop"
+                  class="card-img-left" alt="Islas">
+              </div>
+              <div class="col-lg-5">
+                <div class="card-body">
+                  <span class="badge bg-info category-badge">Playa</span>
+                  <h3 class="card-title h5 fw-bold mt-2">Islas Galápagos</h3>
+                  <p class="card-text text-muted">El paraíso natural donde Darwin encontró su inspiración.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>8 min lectura</small>
+                    <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#articleModal8">
+                      Leer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h4 class="fw-bold mb-3"><i class="bi bi-compass me-2"></i>Turismo</h4>
+          <p class="text-white">Tu compañero de viajes por Latinoamérica y el mundo.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter-x fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="fw-bold mb-3">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-white text-decoration-none">Home</a></li>
+            <li><a href="destinos.html" class="text-white text-white text-decoration-none">Destinos</a></li>
+            <li><a href="agencias.html" class="text-white text-white text-decoration-none">Agencias</a></li>
+            <li><a href="contacto.html" class="text-white text-white text-decoration-none">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p class="text-white">Recibí las últimas noticias de viajes.</p>
+          <form class="d-flex">
+            <input type="email" class="form-control" placeholder="Tu email">
+            <button type="submit" class="btn btn-light ms-2">
+              <i class="bi bi-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center text-white mb-0">&copy; 2026 Revista de Viajes. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modales de Artículos -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="articleModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Explorando los Andes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop"
+            class="img-fluid w-100 rounded mb-4" alt="Montañas">
+          <p>Una aventura increíble a través de las montañas más impresionantes de Sudamérica. Desde Perú hasta
+            Argentina, travers Remote villanos que quitan el aliento.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments1">
+            <!-- Comentarios simulados -->
+          </div>
+          <div class="mt-4">
+            <div class="mb-3">
+              <textarea class="form-control" id="commentInput1" rows="3"
+                placeholder="Escribí tu comentario..."></textarea>
+            </div>
+            <button class="btn btn-dark" onclick="addComment('comments1', 'commentInput1')">
+              Publicar comentario
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="articleModal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Machu Picchu: El secretos de los Incas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="img-fluid w-100 rounded mb-4" alt="Machu Picchu">
+          <p>Descubriendo los misterios de una de las maravillas del mundo moderno.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments2"></div>
+          <div class="mt-4">
+            <textarea class="form-control" id="commentInput2" rows="3"
+              placeholder="Escribí tu comentario..."></textarea>
+            <button class="btn btn-dark mt-2" onclick="addComment('comments2', 'commentInput2')">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modales 3-8 (simplificados) -->
+  <div class="modal fade" id="articleModal3" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sabores del Perú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=500&fit=crop"
+            class="img-fluid w-100 rounded mb-4" alt="Comida">
+          <p>Un viaje culinario por los platos más emblemáticos.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments3"></div>
+          <div class="mt-4">
+            <textarea class="form-control" id="commentInput3" rows="3"
+              placeholder="Escribí tu comentario..."></textarea>
+            <button class="btn btn-dark mt-2" onclick="addComment('comments3', 'commentInput3')">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articleModal4" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Las mejores playas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=500&fit=crop"
+            class="img-fluid w-100 rounded mb-4" alt="Playa">
+          <p>Las costas más bellas de Latinoamérica.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments4"></div>
+          <div class="mt-4">
+            <textarea class="form-control" id="commentInput4" rows="3"
+              placeholder="Escribí tu comentario..."></textarea>
+            <button class="btn btn-dark mt-2" onclick="addComment('comments4', 'commentInput4')">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articleModal5" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sandboard en Atacama</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?w=800&h=500&fit=crop"
+            class="img-fluid w-100 rounded mb-4" alt="Desierto">
+          <p>Una experiencia única en el desierto.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments5"></div>
+          <div class="mt-4">
+            <textarea class="form-control" id="commentInput5" rows="3"
+              placeholder="Escribí tu comentario..."></textarea>
+            <button class="btn btn-dark mt-2" onclick="addComment('comments5', 'commentInput5')">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articleModal6" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carnaval de Rio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://images.unsplash.com/photo-1522008629172-0c17aa47d1ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="img-fluid w-100 rounded mb-4" alt="Carnaval">
+          <p>La fiesta más grande del mundo.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments6"></div>
+          <div class="mt-4">
+            <textarea class="form-control" id="commentInput6" rows="3"
+              placeholder="Escribí tu comentario..."></textarea>
+            <button class="btn btn-dark mt-2" onclick="addComment('comments6', 'commentInput6')">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articleModal7" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Michelin en Buenos Aires</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=500&fit=crop"
+            class="img-fluid w-100 rounded mb-4" alt="Restaurante">
+          <p>Los mejores restaurantes.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments7"></div>
+          <div class="mt-4">
+            <textarea class="form-control" id="commentInput7" rows="3"
+              placeholder="Escribí tu comentario..."></textarea>
+            <button class="btn btn-dark mt-2" onclick="addComment('comments7', 'commentInput7')">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articleModal8" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Islas Galápagos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=500&fit=crop"
+            class="img-fluid w-100 rounded mb-4" alt="Islas">
+          <p>El paraíso natural.</p>
+          <h6 class="fw-bold mt-4">Comentarios</h6>
+          <div class="comments-section" id="comments8"></div>
+          <div class="mt-4">
+            <textarea class="form-control" id="commentInput8" rows="3"
+              placeholder="Escribí tu comentario..."></textarea>
+            <button class="btn btn-dark mt-2" onclick="addComment('comments8', 'commentInput8')">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="resources/scripts/blog.js"></script>
+</body>
+
+</html>
