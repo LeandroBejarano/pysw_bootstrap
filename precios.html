@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Precios - Planes de Viaje</title>
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/styles/precios.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Turismo</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="agencias.html">Agencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row min-vh-50 align-items-center justify-content-center">
+        <div class="col-12 text-center">
+          <h1 class="display-2 fw-bold text-uppercase">Planes y Precios</h1>
+          <p class="lead mt-3">Elegí el plan perfecto para tu próxima aventura</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pricing Cards -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 justify-content-center" id="pricingCards">
+
+        <!-- Plan Básico -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card" data-plan="basico">
+            <div class="pricing-header">
+              <h3 class="plan-name">Básico</h3>
+              <p class="plan-desc">Para viajes individuales</p>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">299</span>
+                <span class="period">/mes</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Acceso a 50+ destinos">5 Destinos
+                  incluidos</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Reservas con 48hs de anticipación">Reservas estándar</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Email y chat disponibles 9-18hs">Soporte
+                  por email</span>
+              </li>
+              <li class="feature-item unavailable">
+                <i class="bi bi-x-circle text-muted me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="No incluye seguro de viaje">Seguro de
+                  viaje</span>
+              </li>
+              <li class="feature-item unavailable">
+                <i class="bi bi-x-circle text-muted me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="No incluye guía personalizado">Guía
+                  personalizado</span>
+              </li>
+              <li class="feature-item unavailable">
+                <i class="bi bi-x-circle text-muted me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="No incluye traslados privados">Traslados
+                  VIP</span>
+              </li>
+            </ul>
+            <div class="pricing-footer">
+              <button class="btn btn-outline-dark w-100">Elegir Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Profesional -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card featured" data-plan="profesional">
+            <div class="badge-popular">Más Popular</div>
+            <div class="pricing-header">
+              <h3 class="plan-name">Profesional</h3>
+              <p class="plan-desc">Para viajeros frecuentes</p>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount" data-monthly="599" data-annual="479">599</span>
+                <span class="period">/mes</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Acceso a todos los destinos">100+
+                  Destinos</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Reservas con 24hs de anticipación">Reservas prioritarias</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Soporte 24/7 disponible">Soporte
+                  24/7</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Seguro básico incluido">Seguro
+                  básico</span>
+              </li>
+              <li class="feature-item unavailable">
+                <i class="bi bi-x-circle text-muted me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="No incluye guía personalizado">Guía
+                  personalizado</span>
+              </li>
+              <li class="feature-item unavailable">
+                <i class="bi bi-x-circle text-muted me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="No incluye traslados privados">Traslados
+                  VIP</span>
+              </li>
+            </ul>
+            <div class="pricing-footer">
+              <button class="btn btn-accent w-100">Elegir Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Premium -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card" data-plan="premium">
+            <div class="pricing-header">
+              <h3 class="plan-name">Premium</h3>
+              <p class="plan-desc">Experiencia exclusiva</p>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount" data-monthly="999" data-annual="799">999</span>
+                <span class="period">/mes</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Todos los destinos + exclusivos">Todos los
+                  destinos</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Reservas instantáneas">Reservas
+                  instantáneas</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Soporte VIP dedicado">Soporte VIP</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Seguro premium con cobertura total">Seguro
+                  premium</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Guía local en cada destino">Guía
+                  personalizado</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Traslados privados incluidos">Traslados
+                  VIP</span>
+              </li>
+            </ul>
+            <div class="pricing-footer">
+              <button class="btn btn-outline-dark w-100">Elegir Plan</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparativa Detallada -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Comparativa Detallada</h2>
+        <p class="text-muted">Compará todos los features side by side</p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table comparison-table" id="comparisonTable">
+          <thead>
+            <tr>
+              <th class="feature-col">Feature</th>
+              <th class="text-center">
+                <span class="plan-label">Básico</span>
+                <span class="price-mini">$299</span>
+              </th>
+              <th class="text-center featured-col">
+                <span class="badge bg-danger mb-1" style="font-size: 0.6rem;">POPULAR</span><br>
+                <span class="plan-label">Profesional</span>
+                <span class="price-mini">$599</span>
+              </th>
+              <th class="text-center">
+                <span class="plan-label">Premium</span>
+                <span class="price-mini">$999</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Cantidad de destinos disponibles para tu plan">
+              <td>
+                <i class="bi bi-globe-americas me-2"></i>Destinos
+              </td>
+              <td class="text-center">5</td>
+              <td class="text-center featured-col">100+</td>
+              <td class="text-center">Todos</td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Tiempo de anticipación para hacer reservas">
+              <td>
+                <i class="bi bi-calendar-check me-2"></i>Reserva
+              </td>
+              <td class="text-center">48hs</td>
+              <td class="text-center featured-col">24hs</td>
+              <td class="text-center">Inmediata</td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Tiempo de atención al cliente">
+              <td>
+                <i class="bi bi-headset me-2"></i>Soporte
+              </td>
+              <td class="text-center">Email</td>
+              <td class="text-center featured-col">24/7</td>
+              <td class="text-center">VIP</td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Cobertura de seguro médico y cancelación">
+              <td>
+                <i class="bi bi-shield-check me-2"></i>Seguro
+              </td>
+              <td class="text-center"><i class="bi bi-x-lg text-muted"></i></td>
+              <td class="text-center featured-col">Básico</td>
+              <td class="text-center"><i class="bi bi-check-lg text-success"></i>Premium</td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Guía turístico local en tu idioma">
+              <td>
+                <i class="bi bi-person-badge me-2"></i>Guía
+              </td>
+              <td class="text-center"><i class="bi bi-x-lg text-muted"></i></td>
+              <td class="text-center featured-col"><i class="bi bi-x-lg text-muted"></i></td>
+              <td class="text-center"><i class="bi bi-check-lg text-success"></i></td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Transporte privado aeropuerto-hotel">
+              <td>
+                <i class="bi bi-car-front me-2"></i>Traslado VIP
+              </td>
+              <td class="text-center"><i class="bi bi-x-lg text-muted"></i></td>
+              <td class="text-center featured-col"><i class="bi bi-x-lg text-muted"></i></td>
+              <td class="text-center"><i class="bi bi-check-lg text-success"></i></td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Acceso a lounges VIP en aeropuertos">
+              <td>
+                <i class="bi bi-airplane me-2"></i>Lounge
+              </td>
+              <td class="text-center"><i class="bi bi-x-lg text-muted"></i></td>
+              <td class="text-center featured-col">2/año</td>
+              <td class="text-center">Ilimitado</td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Upgrade gratuito de habitación sujeto disponibilidad">
+              <td>
+                <i class="bi bi-arrow-up-circle me-2"></i>Upgrade
+              </td>
+              <td class="text-center"><i class="bi bi-x-lg text-muted"></i></td>
+              <td class="text-center featured-col"><i class="bi bi-check-lg text-success"></i></td>
+              <td class="text-center"><i class="bi bi-check-lg text-success"></i></td>
+            </tr>
+            <tr class="feature-row" data-bs-toggle="tooltip" data-bs-placement="left"
+              title="Cancelación con reembolso completo">
+              <td>
+                <i class="bi bi-currency-dollar me-2"></i>Reembolso
+              </td>
+              <td class="text-center">50%</td>
+              <td class="text-center featured-col">80%</td>
+              <td class="text-center">100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-center fw-bold mb-4">Preguntas Frecuentes</h2>
+
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item border-0 mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  <i class="bi bi-question-circle me-2"></i>¿Puedo cambiar de plan después?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Sí, podés actualizar o downgradear tu plan en cualquier momento. Los cambios se aplican
+                  en el siguiente ciclo de facturación.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  <i class="bi bi-question-circle me-2"></i>¿Los precios incluyen impuestos?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Los precios mostrados son finales e incluyen todos los impuestos. No hay costos ocultos.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  <i class="bi bi-question-circle me-2"></i>¿Hay período de prueba?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Sí, ofrecemos 7 días gratis para probar el plan Profesional. Sin compromiso.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h4 class="fw-bold mb-3"><i class="bi bi-compass me-2"></i>Turismo</h4>
+          <p class="text-white">Tu compañero de viajes por Latinoamérica y el mundo.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter-x fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="fw-bold mb-3">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-white text-decoration-none">Home</a></li>
+            <li><a href="destinos.html" class="text-white text-white text-decoration-none">Destinos</a></li>
+            <li><a href="agencias.html" class="text-white text-white text-decoration-none">Agencias</a></li>
+            <li><a href="contacto.html" class="text-white text-white text-decoration-none">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p class="text-white">Recibí las últimas noticias de viajes.</p>
+          <form class="d-flex">
+            <input type="email" class="form-control" placeholder="Tu email">
+            <button type="submit" class="btn btn-light ms-2">
+              <i class="bi bi-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center text-white mb-0">&copy; 2026 Revista de Viajes. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="resources/scripts/precios.js"></script>
+</body>
+
+</html>

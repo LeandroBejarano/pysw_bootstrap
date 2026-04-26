@@ -1,0 +1,346 @@
+/* Precios - Planes de Viaje Styles */
+
+/* === Variables === */
+:root {
+  --primary-color: var(--bs-dark-rgb);
+  --accent-color: #e74c3c;
+  --success-color: #27ae60;
+  --light-bg: #f8f9fa;
+  --card-border: #e9ecef;
+  --transition-speed: 0.3s;
+}
+
+/* === Hero Section === */
+.hero-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  padding-top: 80px;
+  min-height: 50vh;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+/* === Pricing Toggle === */
+.pricing-toggle {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-check-input {
+  width: 3rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* === Pricing Cards === */
+.pricing-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid var(--card-border);
+  transition: all var(--transition-speed) ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.pricing-card.featured {
+  border-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.badge-popular {
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  background: var(--accent-color);
+  color: white;
+  padding: 5px 40px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+}
+
+.pricing-header {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.plan-desc {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+}
+
+.currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.period {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* === Pricing Features === */
+.pricing-features {
+  list-style: none;
+  padding: 1.5rem 0;
+  margin: 0;
+}
+
+.feature-item {
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-item.unavailable {
+  color: #adb5bd;
+  text-decoration: line-through;
+}
+
+.feature-item.unavailable i {
+  color: #dee2e6 !important;
+}
+
+.pricing-footer {
+  padding-top: 1.5rem;
+}
+
+.pricing-footer .btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all var(--transition-speed) ease;
+}
+
+.pricing-footer .btn:hover {
+  transform: scale(1.05);
+}
+
+.pricing-footer .btn-accent {
+  color: white;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* === Comparison Table === */
+.comparison-table {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-table thead {
+  background: var(--light-bg);
+}
+
+.comparison-table th {
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--card-border);
+  vertical-align: middle;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.feature-col {
+  width: 30%;
+  min-width: 200px;
+}
+
+.plan-label {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.price-mini {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-top: 0.25rem;
+}
+
+.featured-col {
+  background: rgba(231, 76, 60, 0.05);
+}
+
+.feature-row {
+  cursor: default;
+}
+
+.comparison-table .bi-check-lg {
+  font-size: 1.25rem;
+  color: var(--success-color);
+}
+
+.comparison-table .bi-x-lg {
+  font-size: 1rem;
+  color: #adb5bd;
+}
+
+/* === Table Hover Effect (jQuery) === */
+.table-hover-row tbody tr {
+  transition: all var(--transition-speed) ease;
+}
+
+.table-hover-row tbody tr:hover {
+  background: linear-gradient(90deg, rgba(231, 76, 60, 0.05) 0%, rgba(44, 62, 80, 0.05) 100%);
+  transform: scale(1.01);
+}
+
+/* === FAQ Accordion === */
+.accordion-button {
+  font-weight: 600;
+  color: var(--primary-color);
+  background: var(--light-bg);
+  border-radius: 8px !important;
+  padding: 1rem 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--card-border);
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(0.3);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+  padding: 1rem 1.25rem;
+  line-height: 1.6;
+}
+
+/* === Tooltip Custom Styles === */
+.tooltip-inner {
+  background: var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bs-tooltip-end .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before {
+  border-top-color: var(--primary-color);
+}
+
+/* === Footer === */
+footer a {
+  transition: color var(--transition-speed) ease;
+}
+
+footer a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* === Responsive === */
+@media (max-width: 991px) {
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .pricing-card.featured:hover {
+    transform: translateY(-10px);
+  }
+
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 40vh;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .amount {
+    font-size: 2.25rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .price-mini {
+    font-size: 1.1rem;
+  }
+}
