@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Security Scan | UNJu</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/phishing.css">
+</head>
+<body class="bg-black text-success">
+
+    <div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="header-scanner mb-4 text-center">
+            <h1 class="display-2 fw-bold">SISTEMA DE SEGURIDAD</h1>
+            <p class="text-muted text-uppercase">Facultad de Ingeniería - Módulo Educativo</p>
+        </div>
+
+        <button type="button" class="btn-terminal" data-bs-toggle="modal" data-bs-target="#modalPhishing">
+            INICIAR ESCANEO DE AMENAZAS
+        </button>
+    </div>
+
+    <div class="modal fade" id="modalPhishing" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-success">
+                
+                <div class="modal-header border-success">
+                    <h5 class="modal-title font-monospace text-warning"> > ANALIZANDO_CORREO_SOSPECHOSO...</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body p-4">
+                    <div class="alert alert-danger bg-danger text-white border-0 text-center mb-4">
+                        <strong>¡ALERTA EDUCATIVA!</strong> Esto es una simulación. No ingrese datos reales.
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="./resources/images/alerta.png" alt="Alerta" class="img-fluid pulse-alert mb-3" style="max-width: 120px;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="mail-box bg-white text-dark p-3 rounded">
+                                <div class="border-bottom mb-2 pb-1 small">
+                                    <span class="text-primary error-target" data-msg="Dominio .tk detectado: Es gratuito y usado para estafas.">De: seguridad@banco-jujuy.tk</span><br>
+                                    <strong>Asunto:</strong> Bloqueo de cuenta inmediato
+                                </div>
+                                <p class="small">Se ha detectado un acceso desde una IP desconocida. Haga clic para validar.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary btn-sm error-target" data-msg="¡CUIDADO! Un banco real nunca enviará un link directo de validación.">VALIDAR MI CUENTA</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer border-success justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <img src="./resources/images/escudo.png" alt="Escudo" style="width: 30px;" class="me-2">
+                        <span class="font-monospace small text-success">Protección UNJu Activa</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">CERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resources/scripts/phishing.js"></script>
+</body>
+</html>
