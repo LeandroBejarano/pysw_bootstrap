@@ -1,0 +1,51 @@
+/* Estilo Terminal/Hacker */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Share+Tech+Mono', monospace;
+    overflow: hidden;
+}
+
+/* Botón creativo con estilo de terminal */
+.btn-terminal {
+    background: transparent;
+    color: #198754;
+    border: 2px solid #026464;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+.btn-terminal:hover {
+    background: #198754;
+    color: black;
+    box-shadow: 0 0 20px #198754;
+}
+
+/* Animación para tu imagen de alerta */
+.pulse-alert {
+    animation: pulse-red 1.5s infinite;
+}
+
+@keyframes pulse-red {
+    0% { filter: drop-shadow(0 0 0px red); transform: scale(1); }
+    50% { filter: drop-shadow(0 0 15px red); transform: scale(1.05); }
+    100% { filter: drop-shadow(0 0 0px red); transform: scale(1); }
+}
+
+/* Zonas de error para el feedback de tu compañero */
+.error-target {
+    cursor: help;
+    padding: 2px;
+}
+
+.error-target:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px dashed red;
+}
+
+.mail-box {
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
